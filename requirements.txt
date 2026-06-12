@@ -1,0 +1,9 @@
+# Binance Futures Testnet Trading Bot — Python Dependencies
+# ----------------------------------------------------------
+# Install with:  pip install -r requirements.txt
+
+# Binance official Python SDK (includes UMFutures for USDT-M)
+python-binance>=1.0.19
+
+# Load environment variables from .env file
+python-dotenv>=1.0.0
