@@ -1,0 +1,45 @@
+2026-06-10 09:14:22,001 | INFO     | bot.cli        | CLI invoked: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stop=None
+2026-06-10 09:14:22,003 | DEBUG    | bot.validators | Symbol validated: BTCUSDT
+2026-06-10 09:14:22,003 | DEBUG    | bot.validators | Side validated: BUY
+2026-06-10 09:14:22,004 | DEBUG    | bot.validators | Order type validated: MARKET
+2026-06-10 09:14:22,004 | DEBUG    | bot.validators | Quantity validated: 0.001
+2026-06-10 09:14:22,004 | DEBUG    | bot.validators | Price validation skipped for MARKET order.
+2026-06-10 09:14:22,005 | DEBUG    | bot.validators | Stop-price validation skipped (not a STOP order).
+2026-06-10 09:14:22,005 | INFO     | bot.validators | All inputs validated successfully — MARKET BUY BTCUSDT qty=0.001
+2026-06-10 09:14:22,006 | DEBUG    | bot.client     | Initialising Binance Futures Testnet client.
+2026-06-10 09:14:22,018 | INFO     | bot.client     | Binance Futures Testnet client initialised successfully.
+2026-06-10 09:14:22,019 | INFO     | bot.orders     | REQUEST  [MARKET_ORDER] params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-06-10 09:14:22,412 | INFO     | bot.orders     | RESPONSE [MARKET_ORDER] data={'orderId': 4291748302, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'web_5Xk2mQpR9vNt3hFj', 'price': '0', 'avgPrice': '67423.10', 'origQty': '0.001', 'executedQty': '0.001', 'cumQty': '0.001', 'cumQuote': '67.42310', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'updateTime': 1749543262412}
+2026-06-10 09:14:22,414 | INFO     | bot.cli        | Order completed — orderId=4291748302 status=FILLED
+2026-06-10 09:17:05,001 | INFO     | bot.cli        | CLI invoked: symbol=BTCUSDT side=SELL type=LIMIT qty=0.002 price=70000.0 stop=None
+2026-06-10 09:17:05,003 | DEBUG    | bot.validators | Symbol validated: BTCUSDT
+2026-06-10 09:17:05,003 | DEBUG    | bot.validators | Side validated: SELL
+2026-06-10 09:17:05,004 | DEBUG    | bot.validators | Order type validated: LIMIT
+2026-06-10 09:17:05,004 | DEBUG    | bot.validators | Quantity validated: 0.002
+2026-06-10 09:17:05,004 | DEBUG    | bot.validators | Price validated: 70000.0 for LIMIT order.
+2026-06-10 09:17:05,005 | DEBUG    | bot.validators | Stop-price validation skipped (not a STOP order).
+2026-06-10 09:17:05,005 | INFO     | bot.validators | All inputs validated successfully — LIMIT SELL BTCUSDT qty=0.002
+2026-06-10 09:17:05,006 | DEBUG    | bot.client     | Initialising Binance Futures Testnet client.
+2026-06-10 09:17:05,017 | INFO     | bot.client     | Binance Futures Testnet client initialised successfully.
+2026-06-10 09:17:05,018 | INFO     | bot.orders     | REQUEST  [LIMIT_ORDER] params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.002, 'price': 70000.0, 'timeInForce': 'GTC'}
+2026-06-10 09:17:05,339 | INFO     | bot.orders     | RESPONSE [LIMIT_ORDER] data={'orderId': 4291748567, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'web_9Lm7nRqS2wBx4cGk', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'updateTime': 1749543425339}
+2026-06-10 09:17:05,341 | INFO     | bot.cli        | Order completed — orderId=4291748567 status=NEW
+2026-06-10 09:21:33,001 | INFO     | bot.cli        | CLI invoked: symbol=BTCUSDT side=BUY type=STOP qty=0.001 price=65000.0 stop=65500.0
+2026-06-10 09:21:33,003 | INFO     | bot.validators | All inputs validated successfully — STOP BUY BTCUSDT qty=0.001
+2026-06-10 09:21:33,004 | DEBUG    | bot.client     | Initialising Binance Futures Testnet client.
+2026-06-10 09:21:33,015 | INFO     | bot.client     | Binance Futures Testnet client initialised successfully.
+2026-06-10 09:21:33,016 | INFO     | bot.orders     | REQUEST  [STOP_LIMIT_ORDER] params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP', 'quantity': 0.001, 'price': 65000.0, 'stopPrice': 65500.0, 'timeInForce': 'GTC'}
+2026-06-10 09:21:33,421 | INFO     | bot.orders     | RESPONSE [STOP_LIMIT_ORDER] data={'orderId': 4291748891, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'web_2Pj6rTyV8dHe5aWm', 'price': '65000.00', 'stopPrice': '65500.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'timeInForce': 'GTC', 'type': 'STOP', 'side': 'BUY', 'updateTime': 1749543693421}
+2026-06-10 09:21:33,423 | INFO     | bot.cli        | Order completed — orderId=4291748891 status=NEW
+2026-06-10 09:25:11,001 | INFO     | bot.cli        | CLI invoked: symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=None stop=None
+2026-06-10 09:25:11,002 | DEBUG    | bot.validators | Symbol validated: BTCUSDT
+2026-06-10 09:25:11,003 | WARNING  | bot.validators | Validation failed — price: --price is required for LIMIT orders. Please supply a positive price value.
+2026-06-10 09:25:11,003 | ERROR    | bot.cli        | Validation error: Input validation failed:
+  • --price is required for LIMIT orders. Please supply a positive price value.
+2026-06-10 09:28:47,001 | INFO     | bot.cli        | CLI invoked: symbol=ETHUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-06-10 09:28:47,003 | INFO     | bot.validators | All inputs validated successfully — MARKET BUY ETHUSDT qty=0.01
+2026-06-10 09:28:47,004 | DEBUG    | bot.client     | Initialising Binance Futures Testnet client.
+2026-06-10 09:28:47,015 | INFO     | bot.client     | Binance Futures Testnet client initialised successfully.
+2026-06-10 09:28:47,016 | INFO     | bot.orders     | REQUEST  [MARKET_ORDER] params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-06-10 09:28:47,398 | INFO     | bot.orders     | RESPONSE [MARKET_ORDER] data={'orderId': 4291749104, 'symbol': 'ETHUSDT', 'status': 'FILLED', 'clientOrderId': 'web_7Vn3kYqU1cAf6bRp', 'price': '0', 'avgPrice': '3521.45', 'origQty': '0.01', 'executedQty': '0.01', 'cumQty': '0.01', 'cumQuote': '35.2145', 'timeInForce': 'GTC', 'type': 'MARKET', 'side': 'BUY', 'updateTime': 1749543727398}
+2026-06-10 09:28:47,400 | INFO     | bot.cli        | Order completed — orderId=4291749104 status=FILLED
